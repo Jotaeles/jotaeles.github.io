@@ -1,9 +1,17 @@
 import * as React from 'react';
+import './header.scss';
 
 class Header extends React.Component{
     render(){
         return( 
             <header>
+                <div>
+                    <div className="jl__logo">
+                        <figure>
+                            <img src="#" alt="JOTAELES LOGO"/>
+                        </figure>
+                    </div>
+                </div>
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>

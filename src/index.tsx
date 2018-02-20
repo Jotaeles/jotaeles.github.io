@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { render } from 'react-dom';
+import './index.scss';
 
-import Header from './views/header';
+import Header from './components/header/header';
 
 class App extends React.Component{
     render(){
