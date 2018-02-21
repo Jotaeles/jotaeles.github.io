@@ -1,12 +1,18 @@
-// @font-face {
-//     font-family: 'Work Sans';
-//     src: url('./../../../assets/fonts/work_Sans/WorkSans-Regular.ttf');
-// }
-// @font-face {
-//     font-family: 'Raleway';
-//     src: url('./../../../assets/fonts/raleway/Raleway-Light.ttf');
-// }
-// @font-face {
-//     font-family: 'Khula';
-//     src: url('./../../../assets/fonts/khula/Khula-Regular.ttf');
-// }
+@font-face {
+    font-family: 'Work-Sans';
+    src: url('./assets/fonts/work_Sans/WorkSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Work-Sans';
+    src: url('./assets/fonts/work_Sans/WorkSans-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Work-Sans';
+    src: url('./assets/fonts/work_Sans/WorkSans-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}

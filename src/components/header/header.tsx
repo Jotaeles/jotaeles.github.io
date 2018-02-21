@@ -4,16 +4,14 @@ import './header.scss';
 class Header extends React.Component{
     render(){
         return( 
-            <header>
-                <div>
-                    <div className="jl__logo">
-                        <figure>
-                            <img src="#" alt="JOTAELES LOGO"/>
-                        </figure>
+            <header className="jl-header">
+                <div className="jl-header-logo__container">
+                    <div className="jl-logo">
+                        <div className="jl-logo__name">jotaeles</div>
                     </div>
                 </div>
-                <nav>
-                    <ul>
+                <nav className="jl-header-nav__container">
+                    <ul className="jl-header-nav__group">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
