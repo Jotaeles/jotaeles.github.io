@@ -1,36 +1,14 @@
 @import './../styles/global/variables.scss';
 
 .jl-header{
-    height: 50px;
+    height: 100px;
     position: relative;
     margin: 0 50px;
-    .jl-header-logo__container,
-    .jl-header-nav__container{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .jl-header-logo__container{
-        left: 0;
-    }
-    .jl-header-nav__container{
-        right: 0;
-        .jl-header-nav__group{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            li{
-                padding: 0px 40px;
-                a{
-                    font-size: 12px;
-                    color: $TEXT;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    letter-spacing: 3px;
-                    font-weight: $FONT_SEMIBOLD;
-                }
-            }
-        }
+    .jl-header__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
     }
     .jl-logo__name{
         font-size: 12px;
