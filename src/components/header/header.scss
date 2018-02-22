@@ -3,18 +3,98 @@
 .jl-header{
     height: 100px;
     position: relative;
-    margin: 0 50px;
+    margin: 0 100px;
     .jl-header__container{
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
+        .jl-header-logo__container{
+            position: relative;
+            height: 100%;
+            width: 100px;
+            .jl-header-logo__line{
+                position: absolute;
+                width: 1px;
+                height: 30px;
+                left: 0px;
+                right: 0px;
+                margin: 0px auto;
+                background-color: $TEXT;
+            }
+            .jl-logo{
+                position: relative;
+                height: 100%;
+                width: 100%;
+                .jl-logo__name{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 12px;
+                    letter-spacing: 3px;
+                    font-weight: $FONT_LIGHT;
+                    color: $TEXT;
+                    text-transform: uppercase;
+                }
+            }
+        }
     }
-    .jl-logo__name{
-        font-size: 12px;
-        letter-spacing: 3px;
-        font-weight: $FONT_MEDIUM;
-        color: $TEXT;
-        text-transform: uppercase;
+    .jl-header-menu__burger{
+        position: relative;
+        width: 50px;
+        height: 100%;
+        .jl_header-menu__burger__container{
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            .jl-menu__burger__container{
+                position: relative;
+                height: 100%;
+                width: 100%;
+                cursor: pointer;
+                span,
+                span:before,
+                span:after{
+                    position: absolute;
+                    height: 1px;
+                    background-color: $TEXT;
+                    transition: all .3s;
+                }
+                span{
+                    width: 20px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto 0px;
+                    &:before,
+                    &:after{
+                        content: '';
+                    }
+                    &:before{
+                        top: 10px;
+                        width: 30px;
+                    }
+                    &:after{
+                        bottom: 10px;
+                        width: 30px;
+                    }
+                }
+                &:hover{
+                    span{
+                        width: 30px;
+                    }
+                    span:before,
+                    span:after{
+                        width: 20px;
+                    }
+                }
+            }
+
+        }
     }
 }
