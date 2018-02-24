@@ -15,10 +15,12 @@ class Nav extends React.Component<Props>{
     nav:JQuery<HTMLElement>;
     line:JQuery<HTMLElement>;
     close:JQuery<HTMLElement>;
+    link:JQuery<HTMLElement>;
     componentDidMount(){
         this.nav = $('.jl-nav');
         this.line = $('.jl-nav__line');
         this.close = $('.jl-nav__close');
+        this.link = $('.jl-nav__menu__link');
     }
 
     componentWillReceiveProps(nextProps : Props){
@@ -27,10 +29,10 @@ class Nav extends React.Component<Props>{
 
     allComplete = () =>{
         this.nav.removeClass('is-open');
-        TweenMax.to(this.close, 0.5,{ opacity: 0});
     }
     animationsComplete = () =>{
         TweenMax.to(this.close, 0.5,{ opacity: 1});
+        TweenMax.to(this.link,0.5,{ opacity:1 });
     }
 
     handleAnimation = (isOpen:boolean)=>{
@@ -38,6 +40,9 @@ class Nav extends React.Component<Props>{
             this.nav.addClass('is-open');
             TweenMax.staggerTo(this.line, 0.5,{ y:"0%", ease : 'Cubic.easeIn'},  0.25/2, this.animationsComplete);
         }else{
+
+            TweenMax.to(this.close, 0.5,{ opacity: 0});
+            TweenMax.to(this.link,0.5,{ opacity:0 });
             TweenMax.staggerTo(this.line, 0.5,{ y:"-100%", ease : 'Cubic.easeIn'},  0.25/2, this.allComplete);
         }
     }
@@ -62,6 +67,13 @@ class Nav extends React.Component<Props>{
                         <span className="jl-nav__close__x"></span>
                     </div>
                 </div>
+                <nav className="jl-nav__menu">
+                    <ul className="jl-nav__menu__container">
+                        <li><a className="jl-nav__menu__link" href="#">Home</a></li>
+                        <li><a className="jl-nav__menu__link" href="#">About</a></li>
+                        <li><a className="jl-nav__menu__link" href="#">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         )
     }

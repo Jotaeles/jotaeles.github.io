@@ -36,6 +36,7 @@
         width: 50px;
         opacity: 0;
         cursor: pointer;
+        z-index: 10;
         .jl-nav__container__close{
             position: relative;
             height: 100%;
@@ -55,6 +56,38 @@
             .jl-nav__close__x:before{
                 content: '';
                 transform: rotate(90deg);
+            }
+        }
+    }
+    .jl-nav__menu{
+        position: absolute;
+        height:100%;
+        width:100%;
+        top: 0;
+        .jl-nav__menu__container{
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            li{
+                list-style: none;
+                display: block;
+                padding-bottom: 50px;
+                .jl-nav__menu__link{
+                    opacity:0;
+                    font-family: $FONT_ROBOTO;
+                    font-weight: $FONT_LIGHT;
+                    font-size: 60px;
+                    color: $TEXT;
+                    margin: 0 auto;
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding: 0 20px;
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    text-decoration: none;
+                }
             }
         }
     }
