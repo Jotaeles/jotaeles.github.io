@@ -29,17 +29,15 @@ class Nav extends React.Component<Props>{
         this.handleAnimation(nextProps.isOpen);
     }
 
-    allComplete = () =>{
+    closeMenu = () =>{
         this.nav.removeClass('is-open');
     }
     animationsComplete = () =>{
         TweenMax.to(this.close, 0.5, { opacity: 1});
-        TweenMax.to(this.box, 0.5, { x:'0%', onComplete:()=>{
-            TweenMax.to(this.box, 0.5, { delay:0.1, x:'105%', ease: Quart.easeOut});
-        },ease: Quart.easeIn });
-        TweenMax.delayedCall( 0.5,()=>{
+        TweenMax.to(this.box, 0.4, { x:'0%', onComplete:()=>{
+            TweenMax.to(this.box, 0.4, { delay:0.2, x:'105%', ease: Cubic.easeOut});
             TweenMax.to(this.title, 0.2, { opacity:1 });
-        });
+        },ease: Cubic.easeIn });
     }
 
     handleAnimation = (isOpen:boolean)=>{
@@ -51,7 +49,10 @@ class Nav extends React.Component<Props>{
             TweenMax.to(this.close, 0.5, { opacity: 0});
             TweenMax.to(this.title,0.5, { opacity:0 });
             TweenMax.set(this.box, { x:'-105%' });
-            TweenMax.staggerTo(this.line, 0.5,{ y:"-100%", ease : 'Cubic.easeIn'},  0.25/2, this.allComplete);
+            
+            TweenMax.delayedCall(0.5,()=>{
+                TweenMax.staggerTo(this.line, 0.5,{ y:"-100%", ease : 'Cubic.easeIn'},  0.25/2, this.closeMenu);
+            });
         }
     }
 
