@@ -1,5 +1,6 @@
 @import './../styles/global/variables.scss';
 .jl-nav{
+    position: fixed;
     width: 100%;
     height: 100vh;
     transform: translateY(-100%);

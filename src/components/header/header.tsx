@@ -13,7 +13,7 @@ class Header extends React.Component<Props>{
                     <div className="jl-header-logo__container">
                         <div className="jl-header-logo__line"></div>
                         <div className="jl-logo">
-                            <div className="jl-logo__name">jotaeles</div>
+                            <div className="jl-logo__name">Jotaeles</div>
                         </div>
                     </div>
                     <div className="jl-header-menu__burger">
