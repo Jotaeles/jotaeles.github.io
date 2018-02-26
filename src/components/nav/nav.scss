@@ -75,18 +75,31 @@
                 display: block;
                 padding-bottom: 50px;
                 .jl-nav__menu__link{
-                    opacity:0;
-                    font-family: $FONT_ROBOTO;
-                    font-weight: $FONT_LIGHT;
+                    position: relative;
+                    font-family: $FONT_MONO;
+                    font-weight: $FONT_REGULAR;
                     font-size: 60px;
                     color: $TEXT;
-                    margin: 0 auto;
-                    display: inline-block;
-                    vertical-align: middle;
-                    padding: 0 20px;
-                    text-transform: uppercase;
                     letter-spacing: 5px;
+                    line-height: 50px;
                     text-decoration: none;
+                    overflow: hidden;
+                    width: auto;
+                    height: 100%;
+                    display: inline-block;
+                    .jl-nav__menu__link__title{
+                        opacity:0;
+                        display: inline-block;
+                    }
+                    .jl-nav__menu__title__box{
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        background: $TEXT;
+                        top: 0;
+                        left: 0;
+                        transform: translateX(-110%);
+                    }
                 }
             }
         }
