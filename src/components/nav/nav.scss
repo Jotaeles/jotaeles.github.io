@@ -76,9 +76,10 @@
                 padding-bottom: 50px;
                 .jl-nav__menu__link{
                     position: relative;
+                    display: inline-block;
                     font-family: $FONT_MONO;
                     font-weight: $FONT_REGULAR;
-                    font-size: 60px;
+                    font-size: 50px;
                     color: $TEXT;
                     letter-spacing: 5px;
                     line-height: 50px;
@@ -86,7 +87,7 @@
                     overflow: hidden;
                     width: auto;
                     height: 100%;
-                    display: inline-block;
+                    cursor: pointer;
                     .jl-nav__menu__link__title{
                         opacity:0;
                         display: inline-block;
@@ -99,6 +100,24 @@
                         top: 0;
                         left: 0;
                         transform: translateX(-110%);
+                    }
+                    .jl-nav__menu__title__underline{
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        height: 1px;
+                        width: 100%;
+                        background: $TEXT;
+                        margin: auto 0px;
+                        transform: scaleX(0);
+                        transition: all .3s ease;
+                    }
+                    &:hover{
+                        .jl-nav__menu__title__underline{
+                            transform: scaleX(1);
+                        }
                     }
                 }
             }
