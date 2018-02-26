@@ -80,45 +80,45 @@
                     display: inline-block;
                     font-family: $FONT_MONO;
                     font-weight: $FONT_REGULAR;
-                    font-size: 50px;
+                    font-size: 40px;
                     color: $TEXT;
                     letter-spacing: 5px;
-                    line-height: 50px;
+                    line-height: 40px;
                     text-decoration: none;
                     overflow: hidden;
                     width: auto;
                     height: 100%;
                     cursor: pointer;
+                    transition: all .3s linear;
                     .jl-nav__menu__link__title{
                         opacity:0;
                         display: inline-block;
+                        transform: translateY(50px);
                     }
-                    .jl-nav__menu__title__box{
-                        position: absolute;
-                        height: 100%;
-                        width: 100%;
-                        background: $TEXT;
-                        top: 0;
-                        left: 0;
-                        transform: translateX(-110%);
-                    }
-                    .jl-nav__menu__title__underline{
-                        position: absolute;
-                        left: 0;
-                        right: 0;
-                        top: 0;
-                        bottom: 0;
-                        height: 1px;
-                        width: 100%;
-                        background: $TEXT;
-                        margin: auto 0px;
-                        transform: scaleX(0);
-                        transition: all .3s ease;
-                    }
+                    // .jl-nav__menu__title__box{
+                    //     position: absolute;
+                    //     height: 100%;
+                    //     width: 100%;
+                    //     background: $TEXT;
+                    //     top: 0;
+                    //     left: 0;
+                    //     transform: translateX(-110%);
+                    // }
+                    // .jl-nav__menu__title__underline{
+                    //     position: absolute;
+                    //     left: 0;
+                    //     right: 0;
+                    //     top: 0;
+                    //     bottom: 0;
+                    //     height: 1px;
+                    //     width: 100%;
+                    //     background: $TEXT;
+                    //     margin: auto 0px;
+                    //     transform: scaleX(0);
+                    //     transition: all .3s ease;
+                    // }
                     &:hover{
-                        .jl-nav__menu__title__underline{
-                            transform: scaleX(1);
-                        }
+                        letter-spacing: 50px;
                     }
                 }
             }

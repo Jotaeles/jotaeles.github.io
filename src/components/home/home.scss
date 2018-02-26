@@ -14,11 +14,27 @@
             display: inline-block;
         }
         .jl-home__welcome{
-            .jl-home__welcome__title{
-                font-size: 72px;
-                font-family: $FONT_ROBOTO;
-                color: $TEXT;
-                padding-bottom: 10px;
+            .jl-home__welcome__title__container{
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                .jl-home__welcome__title{
+                    font-size: 72px;
+                    font-family: $FONT_MONTSERRAT;
+                    color: $TEXT;
+                    padding-bottom: 10px;
+                    display: inline-block;
+                    opacity: 0;
+                }
+                .jl-home__welcome__title_box{
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    transform: translateX(-100%);
+                    left: 0;
+                    top: 0;
+                    background-color: $TEXT;
+                }
             }
             .jl-home__welcome__subtitle{
                 font-size: 20px;
@@ -26,6 +42,17 @@
                 font-weight: $FONT_REGULAR;
                 color: $TEXT;
                 line-height: 30px;
+                opacity: 0;
+                transform: translateY(50px);
+            }
+        }
+        .jl-home__picture{
+            .jl-home__picture__box--image{
+                width: 25%;
+                height: 400px;
+                display: inline-block;
+                // background-image: url('./../../assets/images/pexels.jpeg');
+                background-size: cover;
             }
         }
     }
