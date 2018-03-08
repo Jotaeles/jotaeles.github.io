@@ -32,7 +32,7 @@ class Home extends React.Component{
                 <div className="jl-home__container">
                     <div className="jl-home__welcome">
                         <div className="jl-home__welcome__title__container">
-                            <h1 className="jl-home__welcome__title">Hello!</h1>
+                            <h1 className="jl-home__welcome__title">Hello.</h1>
                             <div className="jl-home__welcome__title_box"></div>
                         </div>
                         <h2 className="jl-home__welcome__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem minus modi aliquid fugiat, reprehenderit distinctio expedita, et quidem corporis, quisquam laborum voluptas voluptatibus. Officiis consectetur reiciendis aspernatur nesciunt amet minus!</h2>

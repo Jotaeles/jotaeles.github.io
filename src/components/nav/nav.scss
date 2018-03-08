@@ -68,32 +68,41 @@
         .jl-nav__menu__container{
             position: relative;
             margin: 0 auto;
-            text-align: center;
             top: 50%;
             transform: translateY(-50%);
+            display: inline-block;
+            width: 50%;
             li{
                 list-style: none;
                 display: block;
                 padding-bottom: 50px;
+                margin-left: 100px;
                 .jl-nav__menu__link{
                     position: relative;
                     display: inline-block;
                     font-family: $FONT_MONO;
                     font-weight: $FONT_REGULAR;
-                    font-size: 40px;
+                    font-size: 80px;
                     color: $TEXT;
                     letter-spacing: 5px;
-                    line-height: 40px;
+                    line-height: 80px;
                     text-decoration: none;
                     overflow: hidden;
                     width: auto;
                     height: 100%;
                     cursor: pointer;
                     transition: all .3s linear;
+                    width: 450px;
+                    padding: 10px 0px;
+                    border-bottom: 1px solid transparent;
+                    border-top: 1px solid transparent;
+                    &.border{
+                        border-bottom: 1px solid #222;
+                        border-top: 1px solid #222;
+                    }
                     .jl-nav__menu__link__title{
-                        opacity:0;
                         display: inline-block;
-                        transform: translateY(50px);
+                        opacity: 0;
                     }
                     .jl-nav__menu__title__box{
                         position: absolute;
@@ -119,27 +128,10 @@
                     // }
                     &:hover{
                         .jl-nav__menu__title__box{
-                            animation: translate-box 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
                         }
                     }
                 }
             }
         }
-    }
-}
-
-//KEYFRAMES
-@keyframes translate-box{
-    0%{
-        transform: translateX(-110%);
-    }
-    25%{
-        transform: translateX(0%);
-    }
-    50%{
-        transform: translateX(0%);
-    }
-    100%{
-        transform: translateX(110%);
     }
 }
