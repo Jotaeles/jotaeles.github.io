@@ -86,21 +86,21 @@ class Nav extends React.Component<Props>{
                             <a className="jl-nav__menu__link">
                                 <span className="jl-nav__menu__title__box"></span>
                                 <span className="jl-nav__menu__link__title">Home</span>
-                                <span className="jl-nav__menu__title__underline"></span>
+                                <span className="jl-nav__menu__link__subtitle">go to home</span>
                             </a>
                         </li>
                         <li>
                             <a className="jl-nav__menu__link">
                                 <span className="jl-nav__menu__title__box"></span>
                                 <span className="jl-nav__menu__link__title">About</span>
-                                <span className="jl-nav__menu__title__underline"></span>
+                                <span className="jl-nav__menu__link__subtitle">know more about me</span>
                             </a>
                         </li>
                         <li>
                             <a className="jl-nav__menu__link">
                                 <span className="jl-nav__menu__title__box"></span>
                                 <span className="jl-nav__menu__link__title">Contact</span>
-                                <span className="jl-nav__menu__title__underline"></span>
+                                <span className="jl-nav__menu__link__subtitle">Get in touch</span>
                             </a>
                         </li>
                     </ul>
