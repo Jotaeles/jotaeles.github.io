@@ -16,6 +16,7 @@ class Nav extends React.Component<Props>{
     line:JQuery<HTMLElement>;
     close:JQuery<HTMLElement>;
     title:JQuery<HTMLElement>;
+    subtitle:JQuery<HTMLElement>;
     box:JQuery<HTMLElement>;
     link:JQuery<HTMLElement>;
     componentDidMount(){
@@ -24,6 +25,7 @@ class Nav extends React.Component<Props>{
         this.close = $('.jl-nav__close');
         this.link = $('.jl-nav__menu__link');
         this.title = $('.jl-nav__menu__link__title');
+        this.subtitle = $('.jl-nav__menu__link__subtitle');
         this.box = $('.jl-nav__menu__title__box');
     }
 
@@ -37,9 +39,7 @@ class Nav extends React.Component<Props>{
     animationsComplete = () =>{
         TweenMax.to(this.close, 0.5, { opacity: 1});
         TweenMax.to(this.box, 0.4, { x:'0%' , onComplete:()=>{
-            this.link.addClass('border');
-            TweenMax.to(this.title, 0.2, { opacity: 1});
-            TweenMax.to(this.box, 0.4,{ x:'105%', ease: Cubic.easeIn });
+            TweenMax.to(this.link, 0.2, { y: 0, opacity: 1, ease: Cubic.easeOut});
         }, ease: Cubic.easeOut});
     }
 
@@ -50,9 +50,7 @@ class Nav extends React.Component<Props>{
         }else{
 
             TweenMax.to(this.close, 0.5, { opacity: 0});
-            TweenMax.to(this.title,0.5, { opacity:0});
-            TweenMax.set(this.box, { x:'-110%' });
-            this.link.removeClass('border');
+            TweenMax.to(this.link, 0.2, { y: 40, opacity: 0, ease: Cubic.easeIn});
             
             TweenMax.delayedCall(0.5,()=>{
                 TweenMax.staggerTo(this.line, 0.5,{ y:"-100%", ease : 'Cubic.easeIn'},  0.25/2, this.closeMenu);
@@ -85,21 +83,21 @@ class Nav extends React.Component<Props>{
                         <li>
                             <a className="jl-nav__menu__link">
                                 <span className="jl-nav__menu__title__box"></span>
-                                <span className="jl-nav__menu__link__title">Home</span>
+                                <span className="jl-nav__menu__link__title">home</span>
                                 <span className="jl-nav__menu__link__subtitle">go to home</span>
                             </a>
                         </li>
                         <li>
                             <a className="jl-nav__menu__link">
                                 <span className="jl-nav__menu__title__box"></span>
-                                <span className="jl-nav__menu__link__title">About</span>
+                                <span className="jl-nav__menu__link__title">about</span>
                                 <span className="jl-nav__menu__link__subtitle">know more about me</span>
                             </a>
                         </li>
                         <li>
                             <a className="jl-nav__menu__link">
                                 <span className="jl-nav__menu__title__box"></span>
-                                <span className="jl-nav__menu__link__title">Contact</span>
+                                <span className="jl-nav__menu__link__title">contact</span>
                                 <span className="jl-nav__menu__link__subtitle">Get in touch</span>
                             </a>
                         </li>

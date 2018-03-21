@@ -19,14 +19,14 @@
             height: 100%;
             background: $MENU;
             transform: translateY(-100%);
-            // .jl-nav__border__line{
-            //     position: absolute;
-            //     height: 100%;
-            //     width: 1px;
-            //     top: 0;
-            //     right: 0;
-            //     background: $TEXT;
-            // }
+            .jl-nav__border__line{
+                position: absolute;
+                height: 100%;
+                width: 1px;
+                top: 0;
+                right: 0;
+                background: #000;
+            }
         }
     }
     .jl-nav__close{
@@ -66,12 +66,11 @@
         width:100%;
         top: 0;
         .jl-nav__menu__container{
-            position: relative;
+            position: absolute;
             margin: 0 auto;
             top: 50%;
             transform: translateY(-50%);
             display: inline-block;
-            width: 50%;
             li{
                 list-style: none;
                 display: block;
@@ -82,7 +81,6 @@
                     display: inline-block;
                     font-family: $FONT_GYRE;
                     color: $TEXT;
-                    letter-spacing: 5px;
                     text-decoration: none;
                     overflow: hidden;
                     width: auto;
@@ -93,50 +91,35 @@
                     padding: 10px 0px;
                     border-bottom: 1px solid transparent;
                     border-top: 1px solid transparent;
-                    &.border{
-                        border-bottom: 1px solid #222;
-                        border-top: 1px solid #222;
+                    transform: translateY(40px);
+                    opacity: 0;
+                    &:hover{
+                        .jl-nav__menu__link__title,
+                        .jl-nav__menu__link__subtitle{
+                            opacity: 1
+                        }
+                    }
+                    .jl-nav__menu__link__title,
+                    .jl-nav__menu__link__subtitle{
+                        transition: opacity .3s ease;
                     }
                     .jl-nav__menu__link__title{
                         line-height: 80px;
-                        font-size: 80px;
+                        font-size: 100px;
                         font-weight: $FONT_BLACK;
                         display: inline-block;
-                        opacity: 0;
+                        letter-spacing: 0px;
+                        opacity: 0.5;
                     }
                     .jl-nav__menu__link__subtitle{
                         padding-top: 10px;
                         line-height: 16px;
-                        font-size: 16px;
+                        font-size: 12px;
                         font-weight: $FONT_REGULAR;
                         display: block;
+                        letter-spacing: 4px;
                         text-transform: uppercase;
-                    }
-                    .jl-nav__menu__title__box{
-                        position: absolute;
-                        height: 100%;
-                        width: 100%;
-                        background: $TEXT;
-                        top: 0;
-                        left: 0;
-                        transform: translateX(-110%);
-                    }
-                    // .jl-nav__menu__title__underline{
-                    //     position: absolute;
-                    //     left: 0;
-                    //     right: 0;
-                    //     top: 0;
-                    //     bottom: 0;
-                    //     height: 1px;
-                    //     width: 100%;
-                    //     background: $TEXT;
-                    //     margin: auto 0px;
-                    //     transform: scaleX(0);
-                    //     transition: all .3s ease;
-                    // }
-                    &:hover{
-                        .jl-nav__menu__title__box{
-                        }
+                        opacity: 0.5;
                     }
                 }
             }
