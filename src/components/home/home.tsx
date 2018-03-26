@@ -35,7 +35,7 @@ class Home extends React.Component{
                             <h1 className="jl-home__welcome__title">Hello.</h1>
                             <div className="jl-home__welcome__title_box"></div>
                         </div>
-                        <h2 className="jl-home__welcome__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem minus modi aliquid fugiat, reprehenderit distinctio expedita, et quidem corporis, quisquam laborum voluptas voluptatibus. Officiis consectetur reiciendis aspernatur nesciunt amet minus!</h2>
+                        <h2 className="jl-home__welcome__subtitle">I am a Front-End Developer based in Coahuila México</h2>
                     </div>
                     <div className="jl-home__picture">
                         <div className="jl-home__picture__box--image"></div>
