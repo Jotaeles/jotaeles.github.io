@@ -1,30 +1,58 @@
 @import './../styles/global/variables.scss';
 .jl-home{
+    position: relative;
     width: 100%;
     height: 100%;
-    .jl-home__container{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    .jl-home__box__container{
+        position: relative;
         height: 100%;
         width: 100%;
-        .jl-home__welcome,
-        .jl-home__picture{
-            width: 50%;
+        .jl-home__box__background{
+            position: relative;
             display: inline-block;
+            width: 25%;
+            height: 100%;
+            background: $FONDO;
+            &:before{
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 1px; 
+                height: 100%;
+                background-color: $WHITE;
+                opacity: 0.5;
+            }
+            &:last-child{
+                &:before{
+                    content: none;
+                }
+            }
         }
+    }
+    .jl-home__container{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 25%;
+        width: 100%;
         .jl-home__welcome{
+            width: 50%;
             .jl-home__welcome__title__container{
                 position: relative;
                 display: inline-block;
                 overflow: hidden;
                 .jl-home__welcome__title{
                     font-size: 100px;
+                    line-height: 85px;
                     font-family: $FONT_GYRE;
                     color: $TEXT;
                     padding-bottom: 10px;
                     display: inline-block;
                     opacity: 0;
+                    .jl-home__welcome__iam{
+                        display: block;
+                    }
                 }
                 .jl-home__welcome__title_box{
                     position: absolute;
@@ -33,7 +61,7 @@
                     transform: translateX(-100%);
                     left: 0;
                     top: 0;
-                    background-color: $TEXT;
+                    background-color: $ORANGE;
                 }
             }
             .jl-home__welcome__subtitle{
@@ -44,15 +72,8 @@
                 line-height: 30px;
                 opacity: 0;
                 transform: translateY(50px);
-            }
-        }
-        .jl-home__picture{
-            .jl-home__picture__box--image{
-                width: 25%;
-                height: 400px;
-                display: inline-block;
-                // background-image: url('./../../assets/images/pexels.jpeg');
-                background-size: cover;
+                width: 50%;
+                padding-top: 30px;
             }
         }
     }

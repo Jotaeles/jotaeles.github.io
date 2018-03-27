@@ -29,19 +29,21 @@ class Home extends React.Component{
     render(){
         return(
             <div className='jl-home'>
+                <div className="jl-home__box__container">
+                    <div className="jl-home__box__background"></div>
+                    <div className="jl-home__box__background"></div>
+                    <div className="jl-home__box__background"></div>
+                    <div className="jl-home__box__background"></div>
+                </div>
                 <div className="jl-home__container">
                     <div className="jl-home__welcome">
                         <div className="jl-home__welcome__title__container">
-                            <h1 className="jl-home__welcome__title">Hello.</h1>
+                            <h1 className="jl-home__welcome__title">Hello.
+                                <span className="jl-home__welcome__iam">I am Jotaeles</span>
+                            </h1>
                             <div className="jl-home__welcome__title_box"></div>
                         </div>
                         <h2 className="jl-home__welcome__subtitle">I am a Front-End Developer based in Coahuila México</h2>
-                    </div>
-                    <div className="jl-home__picture">
-                        <div className="jl-home__picture__box--image"></div>
-                        <div className="jl-home__picture__box--image"></div>
-                        <div className="jl-home__picture__box--image"></div>
-                        <div className="jl-home__picture__box--image"></div>
                     </div>
                 </div>
             </div>
