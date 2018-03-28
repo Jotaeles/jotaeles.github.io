@@ -1,0 +1,26 @@
+@import './../styles/global/variables.scss';
+.jl-social__nav{
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    z-index: 10;
+    transform: rotateZ(90deg) translateX(-50%);
+    transform-origin: left bottom;
+    .jl-social__nav__li{
+        display: inline-block;
+        padding: 10px 15px;
+        list-style: none;
+        .jl-social__nav__link{
+            position: relative;
+            display: inline-block;
+            line-height: 16px;
+            font-size: 10px;
+            font-family: $FONT_GYRE;
+            font-weight: $FONT_REGULAR;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #FFF;
+            text-decoration: none;
+        }
+    }
+}
