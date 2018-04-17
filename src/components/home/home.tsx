@@ -39,7 +39,7 @@ class Home extends React.Component{
                     <div className="jl-home__welcome">
                         <div className="jl-home__welcome__title__container">
                             <h1 className="jl-home__welcome__title">Hello.
-                                <span className="jl-home__welcome__iam">I am Jotaeles</span>
+                                <span className="jl-home__welcome__iam">I am Luis</span>
                             </h1>
                             <div className="jl-home__welcome__title_box"></div>
                         </div>

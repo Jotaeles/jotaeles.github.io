@@ -21,6 +21,8 @@
             text-transform: uppercase;
             color: #FFF;
             text-decoration: none;
+            opacity: 0;
+            transform: translateY(20px);
             &:before{
                 content: '';
                 position: absolute;
