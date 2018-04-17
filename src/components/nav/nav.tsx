@@ -113,13 +113,13 @@ class Nav extends React.Component<Props>{
                         </li>
                     </ul>
                 </nav>
-                <div className="jl-social">
+                {/* <div className="jl-social">
                     <div className="jl-social__container">
                         <div className="jl-social__list"><a className="jl-social__list__link" href="#">Instagram</a></div>
                         <div className="jl-social__list"><a className="jl-social__list__link" href="#">LinkedIn</a></div>
                         <div className="jl-social__list"><a className="jl-social__list__link" href="#">Facebook</a></div>
                     </div>
-                </div>
+                </div> */}
             </div>
         )
     }
