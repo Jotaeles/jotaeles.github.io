@@ -15,7 +15,7 @@ class Social extends React.Component{
     }
     
     handleAnimation(){
-        TweenMax.delayedCall(0.75 ,() =>{
+        TweenMax.delayedCall(0.5 ,() =>{
             TweenMax.to(this.socialLink, 0.5, { y:'0', opacity:1, ease: Cubic.easeOut });
         });
     }

@@ -1,11 +1,30 @@
 import * as React from 'react';
 import './header.scss';
 
+import { TweenMax, TweenLite, Cubic, Quart } from 'gsap';
+import * as $ from 'jquery';
+
 interface Props{
     handleMenuClick : any;
 }
 
 class Header extends React.Component<Props>{
+
+    burger:JQuery<HTMLElement>;
+    logo:JQuery<HTMLElement>;
+
+    componentDidMount(){
+        this.burger = $('.jl-header-menu__burger');
+        this.logo = $('.jl-logo');
+        this.handleAnimation();
+    }
+
+    handleAnimation(){
+        TweenMax.delayedCall(0.5,()=>{
+            TweenMax.to(this.burger, 0.5, { opacity: 1, y:0, ease: Cubic.easeOut });
+            TweenMax.to(this.logo, 0.5, { opacity: 1, y: 0, ease: Cubic.easeOut });
+        });
+    }
     render(){
         return( 
             <header className="jl-header">
