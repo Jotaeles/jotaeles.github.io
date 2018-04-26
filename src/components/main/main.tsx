@@ -7,7 +7,12 @@ class Main extends React.Component{
     render(){
         return( 
             <main className="jl-main">
-                <div className="jl-nav_links__container">
+                <div className="jl-logo">
+                    <div className="jl-logo__container">
+                        <div className="jl-logo__text">Jotaeles</div>
+                    </div>
+                </div>
+                <div className="jl-nav_links">
                     <div className="jl-nav__link about_link">
                         <div className="jl-nav__link__about">About</div>
                     </div>
