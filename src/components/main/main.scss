@@ -82,7 +82,7 @@
             position: absolute;
             width: 300px;
             height: 400px;
-            background: rgba(26, 188, 156, .5);
+            background-color: rgba(26, 188, 156, 1);
             left: 10%;
             top: 50%;
             transform: translateY(-50%);
@@ -103,6 +103,56 @@
                 font-size: 40px;
                 font-weight: $FONT_REGULAR;
             }
+        }
+    }
+    .jl-modal{
+        position: fixed;
+        left: 30px;
+        bottom: 30px;
+        right: 30px;
+        top: 30px;
+        z-index: 100;
+        .jl-modal__overlay{
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color:rgba(26, 188, 156, 1);
+            height: 100%;//temporal
+        }
+        .jl-modal__header{
+            position: absolute;
+            right: 0;
+            top: 0;
+            .jl-modal__close{
+                position: relative;
+                height: 30px;
+                width: 30px;
+                margin-right: 25px;
+                margin-top: 25px;
+                cursor: pointer;
+                span{
+                    position: absolute;
+                    width: 30px;
+                    height: 2px;
+                    background-color: $WHITE;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+                span:nth-child(1){
+                    transform: rotate(45deg);
+                }
+                span:nth-child(2){
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+        .jl-modal__body{
+            width: 100%;
+            height: 100%;
         }
     }
 }

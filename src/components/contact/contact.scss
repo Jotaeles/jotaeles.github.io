@@ -1,0 +1,42 @@
+@import './../styles/global/variables.scss';
+
+.jl-contact__box{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: $WHITE;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.jl-contact__content{
+    font-family: $FONT_GYRE;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .jl-contact__title{
+        font-size: 80px;
+        font-weight: $FONT_BOLD;
+        padding-bottom: 10px;
+    }
+    .jl-contact__description{
+        font-size: 30px;
+        font-weight: $FONT_REGULAR;
+    }
+    .jl-contact__message{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 30px;
+        .jl-contact__btn{
+            background: transparent;
+            padding: 15px 30px;
+            border: 2px solid $WHITE;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: $WHITE;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,6 +1,8 @@
 import * as React from 'react';
 import './main.scss';
 
+import Contact from './../contact/contact';
+
 
 
 class Main extends React.Component{
@@ -43,6 +45,19 @@ class Main extends React.Component{
                                     I am Luis, Frontend Developer based in Coahuila, México.
                                 </h2>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="jl-modal">
+                    <div className="jl-modal__overlay">
+                        <div className="jl-modal__header">
+                            <div className="jl-modal__close">
+                                <span className="jl-modal__close__line"></span>
+                                <span className="jl-modal__close__line"></span>
+                            </div>
+                        </div>
+                        <div className="jl-modal__body">
+                            <Contact/>
                         </div>
                     </div>
                 </div>
