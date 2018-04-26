@@ -2,10 +2,7 @@ import * as React from 'react';
 import { render } from 'react-dom';
 import './index.scss';
 
-import Header from './components/header/header';
-import Nav from './components/nav/nav';
 import Main from './components/main/main';
-import Social from './components/social/social';
 
 interface State {
     isOpenMenu : boolean;
@@ -31,12 +28,6 @@ class App extends React.Component{
     render(){
         return( 
             <div className="jl-wrap">
-                <Header handleMenuClick = { this.handleMenuClick } />
-                <Nav 
-                    isOpen = { this.state.isOpenMenu } 
-                    handleMenuClick = { this.handleMenuClick } 
-                />
-                <Social/>
                 <Main/>
             </div>
         )
