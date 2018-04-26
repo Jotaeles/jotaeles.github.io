@@ -27,6 +27,25 @@ class Main extends React.Component{
                         <div className="jl-social__link">LinkedIn</div>
                     </div>
                 </div>
+                <div className="jl-body">
+                    <div className="jl-body__container">
+                        <div className="jl-body__box">
+                            <div className="jl-body__box__rectangle"></div>
+                        </div>
+                        <div className="jl-body__content">
+                            <div className="jl-body__title">
+                                <h1 className="jl-title__text">
+                                    Hello.   
+                                </h1>
+                            </div>
+                            <div className="jl-body__subtitle">
+                                <h2 className='jl-body__subtitle__text'>
+                                    I am Luis, Frontend Developer based in Coahuila, México.
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         )
     }

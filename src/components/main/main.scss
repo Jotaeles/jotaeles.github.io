@@ -70,4 +70,35 @@
             }
         }
     }
+    .jl-body{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        .jl-body__box{
+            position: absolute;
+            width: 300px;
+            height: 400px;
+            background: rgba(26, 188, 156, .5);
+            left: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .jl-body__content{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-family: $FONT_GYRE;
+            .jl-title__text{
+                font-size: 120px;
+                font-weight: $FONT_BOLD;
+                padding-bottom: 20px;
+                letter-spacing: -3px;
+            }
+            .jl-body__subtitle__text{
+                font-size: 40px;
+                font-weight: $FONT_REGULAR;
+            }
+        }
+    }
 }
