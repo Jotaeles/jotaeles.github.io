@@ -32,6 +32,7 @@
         font-size: 11px;
         text-transform: uppercase;
         letter-spacing: 4px;
+        z-index: 1;
         &.contact_link{
             right: 0;
         }
@@ -45,6 +46,7 @@
             left: 50%;
             top: 50%;
             transform-origin: left top;
+            cursor: pointer;
         }
         .jl-nav__link__about{
             transform: rotate(-90deg) translate(-50%, -50%);
@@ -57,6 +59,7 @@
         position: absolute;
         width: 100%;
         bottom: 0;
+        z-index: 1;
         .jl-social__container{
             display: flex;
             justify-content: center;
@@ -67,6 +70,7 @@
                 font-size: 11px;
                 text-transform: uppercase;
                 letter-spacing: 4px;
+                cursor: pointer;
             }
         }
     }
