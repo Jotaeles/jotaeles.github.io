@@ -23,6 +23,7 @@
     .jl-contact__description{
         font-size: 30px;
         font-weight: $FONT_REGULAR;
+        line-height: 35px;
     }
     .jl-contact__message{
         display: flex;
@@ -36,6 +37,7 @@
             text-transform: uppercase;
             letter-spacing: 4px;
             color: $WHITE;
+            text-decoration: none;
             cursor: pointer;
         }
     }

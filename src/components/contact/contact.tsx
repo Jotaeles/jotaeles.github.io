@@ -11,9 +11,9 @@ class Contact extends React.Component{
                     <div className="jl-contact__box"></div>
                     <div className="jl-contact__content">
                         <h2 className="jl-contact__title">Get in touch</h2>
-                        <p className="jl-contact__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p className="jl-contact__description">Do you need help with your project?<br/>Feel free to contact me on <strong>jl_sandoval_salas@hotmail.com</strong></p>
                         <div className="jl-contact__message">
-                            <a className="jl-contact__btn">Message</a>
+                            <a className="jl-contact__btn" href='mailTo:jl_sandoval_salas@hotmail.com'>Message</a>
                         </div>
                     </div>
                 </div>
