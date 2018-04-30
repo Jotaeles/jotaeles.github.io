@@ -11,7 +11,10 @@ class Main extends React.Component{
             <main className="jl-main">
                 <div className="jl-logo">
                     <div className="jl-logo__container">
-                        <div className="jl-logo__text">Jotaeles</div>
+                        {/* <div className="jl-logo__text">Jotaeles</div> */}
+                        <div className="jl-logo__image">
+                            <img src="./assets/images/jotaeles_logo.svg" alt="Logo Jotaeles"/>
+                        </div>
                     </div>
                 </div>
                 <div className="jl-nav_links">
