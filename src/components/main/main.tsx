@@ -2,6 +2,7 @@ import * as React from 'react';
 import './main.scss';
 
 import Contact from './../contact/contact';
+import Logo from '../logo/logo';
 
 
 
@@ -12,9 +13,7 @@ class Main extends React.Component{
                 <div className="jl-logo">
                     <div className="jl-logo__container">
                         {/* <div className="jl-logo__text">Jotaeles</div> */}
-                        <div className="jl-logo__image">
-                            <img src="./assets/images/jotaeles_logo.svg" alt="Logo Jotaeles"/>
-                        </div>
+                        <Logo name='colorLogo' container='jl-logo__image'/>
                     </div>
                 </div>
                 <div className="jl-nav_links">
@@ -35,7 +34,7 @@ class Main extends React.Component{
                 <div className="jl-body">
                     <div className="jl-body__container">
                         <div className="jl-body__box">
-                            <div className="jl-body__box__rectangle"></div>
+                            {/* <Logo name='logo_rectangle' container='jl-body__box__logo'/> */}
                         </div>
                         <div className="jl-body__content">
                             <div className="jl-body__title">

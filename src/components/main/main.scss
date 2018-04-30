@@ -8,9 +8,8 @@
     background-color: $TEXT;
     .jl-logo{
         position: absolute;
-        top: 0;
-        height: 60px;
-        left: 100px;
+        top: 30px;
+        left: 30px;
         .jl-logo__container{
             width: 100%;
             height: 100%;
@@ -106,6 +105,7 @@
         }
     }
     .jl-modal{
+        display: none;
         position: fixed;
         left: 30px;
         bottom: 30px;
