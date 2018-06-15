@@ -1,0 +1,68 @@
+@import '../../app.scss';
+@import './_partials/_menu.scss';
+
+.jl-main{
+    position: relative;
+    height: calc(100vh - 40px);
+    overflow: hidden;
+    background-color: $ANTIFLASH;
+    .jl-body{
+        position: absolute;
+        z-index: 1;
+        color: $IMPERIAL;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30px;
+        .jl-body__hello{
+            font-size: 120px;
+            line-break: 120px;
+            color: $WILDGREEN;
+        }
+        .jl-body__description{
+            font-size: 30px;
+            line-height: 35px;
+            
+        }
+    }
+    .jl-burger{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 90px;
+        width: 90px;
+        cursor: pointer;
+        background-color: $WILDGREEN;
+        .jl-burger__container{
+            position: absolute;
+            height: 30px;
+            width: 20px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            .jl-burger__btn__line,
+            .jl-burger__btn__line::before,
+            .jl-burger__btn__line::after{
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                background: $WHITE;
+            }
+            .jl-burger__btn__line{
+                display: block;
+                left: 50%;
+                top:50%;
+                transform: translate(-50%,-50%);
+            }
+            .jl-burger__btn__line:before{
+                content: '';
+                top: -8px;
+
+            }
+            .jl-burger__btn__line:after{
+                content: '';
+                bottom: -8px;
+            }
+        }
+    }
+}

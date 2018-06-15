@@ -1,0 +1,23 @@
+
+extends ../../layout/_master.pug
+
+block meta-vars
+    - var _title = 'Jotaeles | Frontend Developer'
+    - var _description = 'I am Luis Sandoval, a Frontend Developer based in México'
+    - var _keywords = 'frontend, developer, portfolio, México, HTML5, CSS3, javascript, web, website, sites'
+    - var twitter_account = ''
+    - var twitter_img = ''
+    - var facebook_url = 'https://jotaeles.github.io'
+    - var facebook_img = ''
+
+block body
+    main.jl-main(
+    id="jl-main")
+        include ./_partials/_menu.pug
+        .jl-body
+            .jl-body__container
+                h1.jl-body__hello Hello.
+                h2.jl-body__description I am Luis Sandoval,</br> a Frontend Developer based in México.
+        .jl-burger
+            .jl-burger__container
+                span.jl-burger__btn__line

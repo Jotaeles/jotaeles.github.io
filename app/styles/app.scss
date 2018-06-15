@@ -1,0 +1,11 @@
+@import 'globals/_typography.scss';
+@import 'globals/_variables.scss';
+@import 'utilities/mixins/_easings.scss';
+@import 'utilities/mixins/_media_queries.scss';
+@import 'vendor/_reset.scss';
+
+body{
+    background-color: $WHITE;
+    font-family: $ANTON;
+    margin: 20px;
+}
